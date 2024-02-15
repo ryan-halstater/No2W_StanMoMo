@@ -52,9 +52,9 @@ model {
     target +=neg_binomial_2_log_lpmf (d|mu,phi);      // Negative-Binomial log model
   }
   target += normal_lpdf(a|0,10);              // Prior on alpha_x
-  target += normal_lpdf(c|0,sqrt(0.3));              // Prior on drift
+  target += normal_lpdf(c|0,sqrt(0.01));              // Prior on drift
   target += normal_lpdf(b|0,sqrt(100));              // Prior on beta_x
-  target += exponential_lpdf(sigma | 0.5);         // Exponential prior for sigma; could definitely be too high
+  target += exponential_lpdf(sigma | 2);         // Exponential prior for sigma; could definitely be too high
   if (family > 0) target += normal_lpdf(aux|0,1)- normal_lcdf(0 | 0, 1);
   
   // soft sum-to-zero constraint on phi,

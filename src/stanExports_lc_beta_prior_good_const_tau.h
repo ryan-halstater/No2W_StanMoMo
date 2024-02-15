@@ -152,9 +152,9 @@ static const std::vector<string> locations_array__ = {" (found before start of p
                                                       " (in 'string', line 43, column 17 to line 45, column 3)",
                                                       " (in 'string', line 43, column 2 to line 48, column 3)",
                                                       " (in 'string', line 49, column 2 to column 32)",
-                                                      " (in 'string', line 50, column 2 to column 39)",
+                                                      " (in 'string', line 50, column 2 to column 40)",
                                                       " (in 'string', line 51, column 2 to column 39)",
-                                                      " (in 'string', line 52, column 2 to column 42)",
+                                                      " (in 'string', line 52, column 2 to column 40)",
                                                       " (in 'string', line 53, column 18 to column 72)",
                                                       " (in 'string', line 53, column 2 to column 72)",
                                                       " (in 'string', line 57, column 2 to column 32)",
@@ -573,11 +573,11 @@ public:
         current_statement__ = 77;
         lp_accum__.add(normal_lpdf<false>(a, 0, 10));
         current_statement__ = 78;
-        lp_accum__.add(normal_lpdf<false>(c, 0, stan::math::sqrt(0.3)));
+        lp_accum__.add(normal_lpdf<false>(c, 0, stan::math::sqrt(0.01)));
         current_statement__ = 79;
         lp_accum__.add(normal_lpdf<false>(b, 0, stan::math::sqrt(100)));
         current_statement__ = 80;
-        lp_accum__.add(exponential_lpdf<false>(sigma, 0.5));
+        lp_accum__.add(exponential_lpdf<false>(sigma, 2));
         current_statement__ = 82;
         if (logical_gt(family, 0)) {
           current_statement__ = 81;
