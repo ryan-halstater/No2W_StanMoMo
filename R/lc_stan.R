@@ -85,7 +85,7 @@ lc_stan <- function(death, exposure,forecast, validation=0, family=c("poisson","
        Tfor=forecast,Tval=Tval,
        family=family)
   suppressWarnings( {
-    out <- rstan::sampling(stanmodels$lc_beta_c_sigma_exp, data = standata, ...)
+    out <- rstan::sampling(stanmodels$lc_beta_prior_good_const_tau, data = standata, ...)
       } )
   return(out)
 }

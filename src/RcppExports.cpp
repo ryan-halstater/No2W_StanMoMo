@@ -18,7 +18,9 @@ RcppExport SEXP _rcpp_module_boot_stan_fit4M6model_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4RHmodel_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_prior_good_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4lc_neg_c_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_tighter_sig_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4lc_two_walks_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4leecarter_mod();
 
@@ -29,7 +31,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_rcpp_module_boot_stan_fit4RHmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4RHmodel_mod, 0},
     {"_rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod, 0},
     {"_rcpp_module_boot_stan_fit4lc_beta_prior_good_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_prior_good_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod, 0},
     {"_rcpp_module_boot_stan_fit4lc_neg_c_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_neg_c_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_tighter_sig_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_tighter_sig_mod, 0},
     {"_rcpp_module_boot_stan_fit4lc_two_walks_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_two_walks_mod, 0},
     {"_rcpp_module_boot_stan_fit4leecarter_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4leecarter_mod, 0},
     {NULL, NULL, 0}
